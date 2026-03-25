@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML + CSS + JS</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            color: #333;
+        }
+
+        .nav-links li {
+            margin: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #064e3b;
+            font-family: monospace;
+            font-size: 1.5em;
+            display: inline;
+            /* Background: lightblue; */
+        }
+
+        nav {
+            position: fixed;
+            top: 0px;
+            width: 100%;
+        }
+
+        .nav-links {
+        position: absolute;
+        top: 10px;
+        left: 200px;
+        }
+
+        button {
+            position: fixed;
+            top: 15px;
+            right: 20px;
+        }
+
+        header div {
+            position: fixed;
+            top: 15px;
+            left: 20px;
+        }
+
+        .titulo {
+            position: absolute;
+            top: 150px;
+            left: 710px;
+        }
+
+        .itens {
+            position: absolute;
+            top: 350px;
+        }
+
+        #um {
+            position: absolute;
+            left: 150px;
+            /* width: 20%; */
+        }
+
+        #dois {
+            position: absolute;
+            left: 800px;
+            /* width: 20%; */
+        }
+
+        #tres {
+            position: absolute;
+            left: 1500px;
+            /* width: 20%; */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img src="html_aula5_ex1_fig1.svg" alt="ADS logo" style="width: 40px; margin-right: 10px;">
+            <strong>ADS</strong>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li>Programação</li>
+                <li>Redes</li>
+                <li>Banco de dados</li>
+                <li>Web</li>
+                <li>Mobile</li>
+            </ul>
+        </nav>
+        <button
+            style="background-color: #064e3b; color: white; border-radius: 20px; padding: 10px 20px; border: none;">Efetuar
+            login
+        </button>
+    </header>
+
+    <section class="titulo">
+        <h1>Front-end é tudo aquilo<br>que o usuário vê na web</h1>
+        <p>Três tecnologias permitem criar sites mais interessantes. <br>Abaixo resumimos cada uma delas.</p>
+    </section>
+
+    <section class="itens">
+        <article id="um">
+            <img src="html_aula5_ex1_fig2.svg" alt="Ícone Sync">
+            <h2>HTML</h2>
+            <p>Linguagem de marcação. Fornece a estrutura da página definindo os elementos.
+            </p>
+        </article>
+        <article id="dois">
+            <img src="html_aula5_ex1_fig3.svg" alt="Ícone Refine">
+            <h2>CSS</h2>
+            <p>Linguagem de estilo. Define a aparência visual e o layout dos elementos definidos em HTML.</p>
+        </article>
+        <article id="tres">
+            <img src="html_aula5_ex1_fig4.svg" alt="Ícone Close the loop">
+            <h2>JavaScript</h2>
+            <p>Linguagem de programação. Adiciona interação com o usuário e atualização no conteúdo HTML e CSS.
+            </p>
+        </article>
+    </section>
+</body>
+
+</html>
